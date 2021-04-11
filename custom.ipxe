@@ -55,7 +55,7 @@ initrd https://osdn.net/frs/redir.php?m=cznic&f=%2Fdrbl%2F66049%2Fdrbl-live-xfce
 boot || goto custom_exit
 
 :freenas
-kernel ${memdis} raw iso
+kernel https://boot.netboot.xyz/memdisk raw iso
 initrd https://download.freenas.org/12.0/STABLE/U2.1/x64/TrueNAS-12.0-U2.1.iso
 boot || goto custom_exit
 
