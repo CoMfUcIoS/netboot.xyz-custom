@@ -13,7 +13,7 @@ item ltsp ${space} LTSP
 item zeroshell ${space} ZeroShell
 item ipcop ${space} IPCop
 item dbrl ${space} Dbrl
-item freenas ${space} FreeNAS
+item freenas ${space} TrueNas Core
 item tails ${space} Tails
 item dos ${space} Boot MS-DOS 6.22
 item dos_game1 ${space} Play Doom
@@ -56,7 +56,8 @@ boot || goto custom_exit
 
 :freenas
 kernel ${memdis} raw iso
-initrd https://download.freenas.org/9.10/STABLE/latest/x64/FreeNAS-9.10.1-U2.iso
+initrd https://download.freenas.org/12.0/STABLE/U2.1/x64/TrueNAS-12.0-U2.1.iso
+#initrd https://download.freenas.org/9.10/STABLE/latest/x64/FreeNAS-9.10.1-U2.iso
 boot || goto custom_exit
 
 :tails
